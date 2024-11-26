@@ -4,5 +4,5 @@ from . views import BlogPostListCreate , BlogPostRetrieveUpdateDestroy
 
 urlpatterns = [
     path("blogposts/", BlogPostListCreate.as_view(),name = 'blogpost-view-create'),
-    path("blogposts/<int:pk>/", BlogPostRetrieveUpdateDestroy.as_view(),name = 'blogpost-retrieve-update-destroy'),
+    path("blogposts/<str:pk>/", BlogPostRetrieveUpdateDestroy.as_view(),name = 'blogpost-retrieve-update-destroy'),
 ]
